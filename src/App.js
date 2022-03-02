@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
+import Counter from './Counter.js';
 
 function App() {
   const baseUrl = 'https://jsonplaceholder.typicode.com/posts/'
@@ -66,8 +67,8 @@ function App() {
           {/* setting a ternary to check if there is a post; the default state for the post was set as a null. if there is a post that is found, it is then updated into the <p> element, with the property of the title*/}
           
         </div>
-
-
+      <p className="name">dog</p>
+      <Counter initialCount={200}/>
         <ul>{lis}</ul>
         <a
           className="App-link"
@@ -81,5 +82,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
